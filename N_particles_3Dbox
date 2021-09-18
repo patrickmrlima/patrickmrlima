@@ -1,0 +1,77 @@
+import numpy, random, time
+import matplotlib.pyplot as plt
+from mpl_toolkits import mplot3d
+
+#uso: start( número de particulas, dimensão da caixa, tempo de simulação)
+
+def pstates(N, L): #N particulas em uma caixa quadrada de lado L
+    M = numpy.zeros((N,6))
+    E = 0
+    for i in range(0, N):
+        for j in range(0,3):
+            M[i][j] = L*random.random() #componente j da posição da particula i
+        for j in range(3,6):
+            M[i][j] = L*random.uniform(-1,1)/100 #componente j da velocidade da particula i
+            E += (M[i][j]**2)/2
+    return (M, E)
+
+def dynamics(M, L): 
+    N = len(M)
+    delta_p = 0
+    for i in range(0,N):
+        for j in range(0,3):
+            M[i][j] += M[i][j+3] #posição final da particula i (delta_x = v * delta_t), delta_t = 1
+            if M[i][j] >= L:  #interação com a parede em x,y,z = L
+                d = M[i][j] - L
+                M[i][j] += -2*d
+                M[i][j+3] *= -1
+                delta_p += abs(2*M[i][j+3])
+            elif M[i][j] <= 0: #interação com a parede em x,y,z = 0
+                d = -M[i][j]
+                M[i][j] += 2*d
+                M[i][j+3] *= -1
+                delta_p += abs(2*M[i][j+3])
+    return (M, delta_p)
+        
+def visual(M, L):
+    fig = plt.figure()
+    ax = plt.axes(projection='3d')
+    N = len(M)
+    x = M[:,0]
+    y = M[:,1]
+    z = M[:,2]
+    ax.scatter3D(x, y, z, c=z);
+    ax.set_xlim(0, L)
+    ax.set_ylim(0, L)
+    ax.set_zlim(0, L);
+    
+def start(N, L, T):
+    Delta_p = 0
+    (states, E) = pstates(N,L)
+    for i in range(0,T):
+        (states, Dp) = dynamics(states, L)
+        Delta_p += Dp
+        #visual(states, L)
+        #filename = 'plot/frame' + str(i) +'.png'
+        #plt.savefig(filename)
+        #plt.clf()
+    P = Delta_p / (T*6*L**2)
+    V = L**3
+    n = N/6.02214076e23
+    k = 1.380649e-23
+    T = (2*E)/(3*k)
+    R = (P*V)/(n*T)
+    return N*R #por algum motivo foi necessário multiplicar por N
+
+
+
+def R_teste(Y):
+	R = 0
+	for i in range(1,Y+1):
+		r = start(int(500 + 500*random.random()), 100*random.random(), int(500 + 500*random.random()))
+		R += r
+	return R/Y
+    
+    
+#uso: start( número de particulas, dimensão da caixa, tempo de simulação)
+#teste: R_teste(numero de simulações a serem realizadas, o resultado é a média de R)
