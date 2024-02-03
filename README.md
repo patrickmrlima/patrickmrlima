@@ -1,16 +1,15 @@
-### Hi there 👋
+### Hi there 👋, 
 
-<!--
-**patrickmrlima/patrickmrlima** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I'm Patrick Lima, a PhD Student in Quantum Optics and Quantum Information at UFMG/Brazil. Welcome to my GitHub profile!
 
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- 🔭 I’m currently working on:
+  - Quantum phenomena with indefinite causal order
+  - Context Incompatibility in Quantum Systems
+  - Quantum Imaging of Structured Light
+  - Data Analysis & Visualization, Optimization and Automation for a Quantum Optics Lab.
+- 💬 ~~Don't~~ Ask me about quantum weirdness!
+- 📫 How to reach me: [patrickmrlima@gmail.com](mailto:patrickmrlima@gmail.com)
+- 😄 Pronouns: he/him
+- ⚡ Fun fact: $\ket{\text{Me!}} = 0.775\ket{\text{Physicist}} + 0.548\ket{\text{Dev.}} +  0.316\ket{\text{Musician}}$
+- 🔎 Orcid: [https://orcid.org/0000-0001-9004-141X](https://orcid.org/0000-0001-9004-141X)
+- 🐈: Harry \& Luna.
