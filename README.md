@@ -1,6 +1,6 @@
-### Hi there 👋, 
+# Hi there 👋
 
-I'm Patrick Lima, a PhD Student in Quantum Optics and Quantum Information at UFMG/Brazil. Welcome to my GitHub profile!
+    I'm Patrick Lima, a PhD Student in Quantum Optics and Quantum Information at UFMG/Brazil. Welcome to my GitHub profile!
 
 - 🔭 I’m currently working on:
   - Quantum phenomena with indefinite causal order
