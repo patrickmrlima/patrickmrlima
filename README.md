@@ -6,12 +6,12 @@ I'm a PhD Student in Quantum Optics and Quantum Information at Quantum Optics La
   - Quantum phenomena with indefinite causal order
   - Context Incompatibility in Quantum Systems
   - Quantum Imaging of Structured Light
-  - Data Analysis & Visualization, Optimization and Automation for a Quantum Optics Lab.
+  - Data Analysis & Visualization, Optimization and Automation for a Quantum Optics Lab
 - 💬 Ask me about quantum weirdness
 - ❌ Don't ask me about quantum weirdos
 - 🐍 Python charmer
 - 🎵 Multi-style music enjoyer
-- 🐈: Professional cat lover
+- 🐈 Professional cat lover
 - ⚡ Fun fact: $\ket{\text{Me!}} = 0.775\ket{\text{Physicist}} + 0.548\ket{\text{Dev.}} +  0.316\ket{\text{Musician}}$
   
 ---
