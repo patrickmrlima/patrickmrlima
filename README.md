@@ -3,9 +3,9 @@
 I'm a PhD Student in Quantum Optics and Quantum Information at Quantum Optics Lab. - UFMG/Brazil. Welcome to my GitHub profile!
 
 - 🔭 I’m currently working on:
-  - Quantum phenomena with indefinite causal order
+  - Causal structure within quantum mechanics
   - Context Incompatibility in Quantum Systems
-  - Quantum Imaging of Structured Light
+  - Structured Light Beams: Generation and Quantum Imaging 
   - Data Analysis & Visualization, Optimization and Automation for a Quantum Optics Lab
 - 💬 Ask me about quantum weirdness
 - ❌ Don't ask me about quantum weirdos
